@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #a8d8ea, #c4e3c4);
+}
+
+.right-section {
+    flex: 1;
+    background-image: url('images/varsity.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logincontainer {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#input {
+    margin-bottom: 10px;
+    height: 25px;
+    width: 70%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f0f1f4;
+}
+
+.buttonc {
+    display: flex;
+    justify-content: center;
+}
+
+.loginbtn {
+    height: 35px;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.inputc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.facebook-btn {
+    background-color: rgb(43, 77, 168);
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    opacity: 0.9;
+}
+
+label {
+    font-size: 25px;
+    color: #777070;
+}
+
+h1 {
+    color: (#008080);
+}
+
+.loginbtn {
+    background: linear-gradient(45deg, #007BFF, #20B2AA);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.loginbtn:hover {
+    background: linear-gradient(45deg, #0056b3, #008080);
+}
+
+.inputc input {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.inputc input:hover {
+    height: 35px;
+    border-color: #008080;
+    outline: none;
+}
