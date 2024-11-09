@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Faculty Section */
+.faculty-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 1rem;
+}
+
+.faculty-card img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.faculty-card h3 {
+    margin-top: 0.5rem;
+}
+
+/* Courses Section */
+.courses ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.courses li {
+    background-color: #eaeaea;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.courses li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.courses li:hover {
+    background-color: #ccc;
+}
+
+/* Events Section */
+.event-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+.event-card h3 {
+    margin-top: 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}

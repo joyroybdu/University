@@ -1,0 +1,29 @@
+h1{
+    color: rgb(39, 16, 213);
+}
+img{
+    height: 250px;
+    width: 350px;
+
+    
+    }
+
+    
+    .name{background-image:url(download.jpg);}
+    body{
+        background-image: url(Tige.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        background-size: cover;
+    }
+    table,td,th{
+        margin-left: 150px;
+        border: 2px,solid,rgb(79, 73, 73);
+        border-collapse:collapse;
+        border-radius: 5px;
+    }
+    th{
+        background-color: rgb(185, 198, 157);
+        padding: 5px;
+    }

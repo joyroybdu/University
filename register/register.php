@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker</title>
+    <title>Register Form</title>
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> 
 
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>

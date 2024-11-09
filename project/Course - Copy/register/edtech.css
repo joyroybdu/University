@@ -1,0 +1,251 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #8f8181;
+    background-color: #F5F5F5; /* Lighter background for better readability */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #1E293B;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Serif font for headings */
+}
+
+/* Parallax Header */
+.parallax-header {
+    background: url('images/edte.jpg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply; /* Add a subtle overlay for depth */
+}
+
+.header-content h1 {
+    color: #adb5be;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(57, 6, 6, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #dbdfe6;
+    background: transparent;
+    font-weight: bold;
+    color:rgb(19, 6, 6);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2f0b5b;
+    font-size: larger;
+}
+
+/* Sessions Section */
+.sessions {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+}
+
+.sessions h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+.sessions ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sessions ul li {
+    display: inline-block;
+    background-color: #3B82F6;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.sessions ul li:hover {
+    background-color: #2563EB;
+    transform: translateY(-5px);
+}
+
+/* Overview Section */
+.overview {
+    padding: 60px 20px;
+    background-color: #F1F5F9;
+    text-align: center;
+}
+
+.overview h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1E293B;
+}
+
+.overview p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #6B7280;
+}
+
+/* Events Section */
+.events {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #334155;
+}
+
+.event-card {
+    background-color: #F3F4F6;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    font-size: 22px;
+    color: #1E293B;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+/* Faculty Section */
+.faculty {
+    padding: 60px 20px;
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+.faculty h2 {
+    font-size: 28px;
+    color: #1E293B;
+    margin-bottom: 30px;
+}
+
+.faculty-card {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.faculty-card h3 {
+    font-size: 18px;
+    color: #1E293B;
+    margin-bottom: 5px;
+}
+
+.faculty-card p {
+    font-size: 16px;
+    color: #6B7280;
+}
+
+/* Footer */
+footer {
+    background-color: #1E293B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #3B82F6;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #2563EB;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .faculty-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

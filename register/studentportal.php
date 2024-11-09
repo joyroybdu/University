@@ -20,7 +20,7 @@
     </section>
 
     <section class="quiz-section">
-        <h2>Take a Quiz</h2>
+        <h2>Quiz</h2>
         <button onclick="startQuiz()">Start Quiz</button>
     </section>
 

@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1;                        /* Left side takes half the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #a8d8ea, #c4e3c4);
+
+         /* Optional background for left section */
+}
+
+.right-section {
+    flex: 1;                        /* Right side takes half the screen */
+    background-image: url('j.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logincontainer {
+    width: 400px;                    /* Fixed width for the container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#input {
+    margin-bottom: 10px;
+    height: 25px;
+    width: 70%;                    
+    padding: 15px;
+    border-radius: 15px;   
+    border: none;   
+    background-color: #f0f1f4;
+}
+
+
+.buttonc {
+    display: flex;
+    justify-content: center;
+}
+
+.loginbtn {
+    height: 35px;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;                 /* Pointer cursor for buttons */
+}
+
+.inputc {
+    display: flex;                   /* Use flexbox for label and input alignment */
+    flex-direction: column;          /* Stack labels and inputs vertically */
+    gap: 10px;                       /* Add spacing between label-input pairs */
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.google-btn {
+    background-color: #db4437;       /* Google red */
+}
+
+.facebook-btn {
+    background-color:rgb(43, 77, 168);       
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    opacity: 0.9;               
+}
+label{
+    font-size: 25px;
+    color: #777070;
+}
+h1{
+    color: (#008080);
+}
+.loginbtn {
+    background: linear-gradient(45deg, #007BFF, #20B2AA); 
+    color: #FFFFFF; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; 
+}
+
+.loginbtn:hover {
+    background: linear-gradient(45deg, #0056b3, #008080);
+}
+.inputc input {
+    height: 30px;               /* Initial height */
+    width: 100%;                /* Full width */
+    padding: 10px;              /* Padding for better appearance */
+    border: 1px solid #ccc;     /* Border color */
+    border-radius: 5px;         /* Rounded corners */
+    box-sizing: border-box;      /* Ensure padding doesn't affect width */
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+}
+
+.inputc input:hover {
+    height: 35px;               /* Increased height on hover */
+    border-color: #008080;      /* Change border color on hover */
+    outline: none;              /* Remove outline */
+}

@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0fe;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2b2b2b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #003366;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container h1 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: #10081a;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #00509e;
+}
+
+.profile-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;  /* Ensures the image fits within the circle */
+    border-radius: 50%;
+    border: 3px solid #003366;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #333333;
+}
+
+.assignments-section, .due-section, .class-tests-section, .notifications-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+ul li {
+    background-color: #f2f2f2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul li span {
+    font-size: 16px;
+    color: #333333;
+}
+
+.submitted {
+    background-color: #e0f7ea;
+}
+
+.not-submitted {
+    background-color: #ffebee;
+}
+
+.due {
+    background-color: #fff8e1;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* Styling for the logout button */
+/* Styling for the logout button */
+.logout-container {
+    text-align: right;
+    padding: 10px;
+}
+
+.logout-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logout-icon {
+    margin-right: 10px;
+    font-size: 20px; /* Size of the Font Awesome icon */
+}
+
+.logout-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .logout-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .logout-icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logout-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .logout-icon {
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-container h1 {
+        font-size: 20px;
+    }
+
+    .navbar ul li a {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    ul li span {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container h1 {
+        font-size: 18px;
+    }
+
+    .navbar ul li a {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+
+    .profile-info p {
+        font-size: 12px;
+    }
+
+    ul li span {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

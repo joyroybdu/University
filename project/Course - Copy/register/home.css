@@ -1,0 +1,566 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.university-info {
+    text-align: center;
+    color: #d32f2f;
+}
+
+.university-info h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.university-info p {
+    font-size: 16px;
+    color: purple;
+}
+
+/* Social Links */
+.social-links {
+    text-align: right;
+}
+
+.social-links p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d32f2f;
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .university-info h1 {
+        font-size: 20px;
+    }
+
+    .university-info p {
+        font-size: 14px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .social-links a {
+        font-size: 18px;
+        margin: 5px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .university-info h1 {
+        font-size: 18px;
+    }
+
+    .university-info p {
+        font-size: 12px;
+    }
+
+    .social-links p {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 16px;
+        margin: 3px;
+    }
+}
+Explanatio
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #008080;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+}
+
+.navbar ul li a:hover {
+    background-color: #005f5f;
+    border-radius: 5px;
+}
+
+/* Marquee Styling */
+.marquee-text {
+    background-color: #ffe0b2;
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: white;
+    margin-top: 1em;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container, .course-container,a {
+    text-decoration: none;
+    width: 45%;
+}
+
+
+h2 {
+    color: #008080;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.card, .course-card {
+    background-color: #008080;
+    color: white;
+    padding: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover, .course-card:hover {
+    background-color: #005f5f;
+    transform: scale(1.05);
+}
+
+/* Progress Section */
+.track-progress {
+    margin: 3em auto;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.progress-item {
+    width: 45%;
+    margin-bottom: 1em;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 25px;
+    margin: 0.5em 0;
+}
+
+.progress {
+    background-color: #008080;
+    height: 100%;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 0.9em;
+}
+
+/* News Section */
+.news-section {
+    margin: 2em 0;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-slider {
+    position: relative;
+}
+
+.news-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 2em;
+}
+
+.news-card {
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 1em;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider-btn {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+/* General Calendar Section */
+.calendar-section {
+    padding: 2em;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calendar {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.month ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+.month li {
+    text-align: center;
+    padding: 0.5em;
+    width: 33%;
+}
+
+.month li.prev, .month li.next {
+    cursor: pointer;
+    color: #666;
+}
+
+.month li:hover {
+    color: #008080;
+}
+
+/* Weekdays */
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+}
+
+.weekdays li {
+    width: 14%;
+    padding: 0.75em;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Days */
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    width: 14%;
+    padding: 1.5em;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 0.5em;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.days li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Today's date */
+.days li.today {
+    background-color: #008000; /* Green for the current day */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Fridays and Saturdays in red */
+.days li.friday, .days li.saturday {
+    background-color: #ff4d4d; /* Red color for Friday and Saturday */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Empty Days */
+li.empty {
+    visibility: hidden;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .calendar {
+        width: 100%;
+    }
+
+    .month ul {
+        font-size: 1.4em;
+    }
+
+    .weekdays li, .days li {
+        padding: 1em;
+    }
+}
+
+
+
+
+/* Footer Section */
+/* General reset */
+ h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer styling */
+footer {
+    background-color: #008080;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c0392b;
+    padding-bottom: 5px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom part of the footer */
+.footer-bottom {
+    background-color: #152a2a;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* Icons Styling */
+.footer-column i {
+    margin-right: 8px;
+    color: #c0392b;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets (768px to 991px) */
+@media screen and (max-width: 991px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Phones (Up to 767px) */
+@media screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-column p, .footer-column a {
+        font-size: 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container, .course-container {
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-item {
+        width: 100%;
+    }
+
+    .news-cards {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 0.3em 0.8em;
+    }
+
+    .footer-content ul li a {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-building"></i> Department</a></li>
+            <li><a href="https://libgen.is/"><i class="fas fa-book"></i> Library</a></li>
+            <li><a href="#"><i class="fas fa-pencil-alt"></i> Exam</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Result</a></li>
+            <li><a href="https://bdu.ac.bd/"><i class="fas fa-bullhorn"></i> Notice</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Marquee Text -->
+    <marquee behavior="scroll" direction="left" class="marquee-text">
+        Exam Routine has been published. Check it out!
+    </marquee>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <div class="card-container department-section">
+            <h2>Departments</h2>
+            <div class="card">EdTech</div>
+            <div class="card">IRE</div>
+            <div class="card">Data Science</div>
+            <div class="card">Cyber Security</div>
+        </div>
+
+        <div class="course-container">
+            <h2>Courses</h2>
+            <div class="course-card">Web Development</div>
+            <div class="course-card">AI & Machine Learning</div>
+            <div class="course-card">Database Management</div>
+            <div class="course-card">Cyber Security Fundamentals</div>
+        </div>
+    </div>
+
+    <!-- Additional Sections -->
+    <div class="additional-sections">
+        <!-- Track Your Progress Section -->
+        <section class="track-progress">
+            <h2>Track Your Progress</h2>
+            <div class="progress-container">
+                <div class="progress-item">
+                    <h3>Web Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <span>70% Complete</span>
+                </div>
+                <div class="progress-item">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <span>50% Complete</span>
+                </div>
+                <div class="progress-item">
+                    <h3>Database Management</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span>90% Complete</span>
+                </div>
+                <div class="progress-item">
+                    <h3>Cyber Security Fundamentals</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                    <span>30% Complete</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <div class="news-section">
+            <h2>Latest News</h2>
+            <div class="news-slider">
+                <button class="slider-btn left" onclick="slide(-1)">&#10094;</button>
+                <div class="news-cards">
+                    <div class="news-card">
+                        <img src="news-image1.jpg" alt="New Course Announcement" />
+                        <h3>New Course Announcement</h3>
+                        <p>A new Data Science course will start next month.</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="news-image2.jpg" alt="Library Hours Update" />
+                        <h3>Library Hours Update</h3>
+                        <p>The library will be open from 8 AM to 8 PM during the exam period.</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="news-image3.jpg" alt="Notice" />
+                        <h3>Notice</h3>
+                        <p>Please submit your assignments by the end of this week.</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="news-image4.jpg" alt="Workshop Announcement" />
+                        <h3>Workshop Announcement</h3>
+                        <p>Join our workshop on web development this weekend.</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="news-image5.jpg" alt="Graduation Ceremony" />
+                        <h3>Graduation Ceremony</h3>
+                        <p>The graduation ceremony will take place on June 15.</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="news-image6.jpg" alt="New Library Books" />
+                        <h3>New Library Books</h3>
+                        <p>Check out the latest additions to our library collection.</p>
+                    </div>
+                </div>
+                <button class="slider-btn right" onclick="slide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Calendar Section -->
+        <section class="calendar-section">
+            <h2>Academic Calendar</h2>
+            <div class="calendar">
+                <div class="month">
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>
+                            August<br>
+                            <span style="font-size:18px">2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="weekdays">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Academic Portal. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

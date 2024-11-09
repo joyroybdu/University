@@ -1,0 +1,383 @@
+/* General Styles for All Devices */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(52, 73, 94, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Marquee Text */
+.marquee-text {
+    background-color: rgba(52, 152, 219, 0.9);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Sections */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+}
+
+/* Department Section - Gradient Background */
+.department-section {
+    width: 45%;
+    padding: 20px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Container - Gradient Background */
+.course-container {
+    width: 45%;
+    padding: 20px;
+    background: linear-gradient(135deg, #f39c12, #d35400);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Cards */
+.card-container, .course-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card, .course-card {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffeb3b;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.card:hover, .course-card:hover {
+    transform: scale(1.05);
+    background-color: #f39c12;
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #f39c12;
+}
+
+/* Additional Sections Container */
+.additional-sections {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Track Your Progress Section */
+.track-progress, .calendar-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar Styling */
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #1abc9c;
+    width: 0;
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+}
+
+.news-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.news-slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing elements */
+    position: relative; /* For positioning buttons */
+}
+
+.news-cards {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth sliding transition */
+}
+
+.news-card {
+    min-width: 300px; /* Width of each card */
+    margin: 0 10px; /* Space between cards */
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    text-align: center;
+    padding: 10px;
+}
+
+.news-card img {
+    width: 100%; /* Responsive image */
+    border-radius: 5px;
+}
+
+.slider-btn {
+    background-color: #6ab04c; /* Button background */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute; /* Position buttons over the slider */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+}
+
+
+.slider-btn.left {
+    left: 10px; /* Position left button */
+}
+
+.slider-btn.right {
+    right: 10px; /* Position right button */
+}
+
+.slider-btn:hover {
+    background-color: #4a8d2f; /* Darker green on hover */
+}
+
+/* Calendar Styling */
+.calendar {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for the calendar */
+}
+
+.month ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3498db; /* Blue background for the month header */
+    color: white; /* White text for the month header */
+    border-bottom: 2px solid #2980b9; /* Darker blue bottom border */
+}
+
+.weekdays {
+    display: flex;
+    background-color: #f39c12; /* Orange background for weekdays */
+    color: white; /* White text for weekdays */
+}
+
+.weekdays li {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days li {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Light grey border for days */
+    margin: 2px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.days li:hover {
+    background-color: #e67e22; /* Hover color for days */
+}
+
+.days li:nth-child(7n+1), /* Sunday */
+.days li:nth-child(7n) { /* Saturday */
+    background-color: #e74c3c; /* Red background for weekends */
+    color: white; /* White text for weekends */
+}
+
+.days li.current-day {
+    background-color: #1abc9c; /* Highlight current day */
+    color: white; /* White text for current day */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .content-section {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-section, .course-container {
+        width: 100%;
+    }
+
+    .additional-sections {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .department-section, .course-container {
+        padding: 15px;
+    }
+
+    .additional-sections {
+        padding: 20px;
+    }
+
+    .calendar {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .card, .course-card {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .track-progress, .calendar-section {
+        padding: 20px;
+    }
+}
